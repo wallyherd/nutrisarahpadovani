@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Award, BookOpen, Star, Heart } from "lucide-react";
+import { Award, BookOpen, Star, Heart, Shield } from "lucide-react";
 
 export default function Sobre() {
   return (
