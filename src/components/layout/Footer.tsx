@@ -100,7 +100,7 @@ export function Footer() {
             <Link href="/privacidade" className="hover:text-white transition-colors">Política de Privacidade</Link>
             <Link href="/termos" className="hover:text-white transition-colors">Termos de Uso</Link>
           </div>
-          <span>Desenvolvido com Antigravity Kit</span>
+          <span>Desenvolvido por HDSoluções</span>
         </div>
       </div>
     </footer>

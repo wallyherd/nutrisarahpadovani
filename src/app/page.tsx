@@ -60,10 +60,6 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-primary p-8 text-white hidden md:block">
-                <span className="text-4xl font-serif font-bold block mb-1">10+</span>
-                <span className="text-[10px] uppercase tracking-widest font-bold text-accent">Anos de Experiência</span>
-              </div>
             </div>
             <div className="lg:w-1/2 flex flex-col gap-8">
               <span className="text-secondary font-bold uppercase tracking-widest text-xs">Sobre o Instituto</span>
