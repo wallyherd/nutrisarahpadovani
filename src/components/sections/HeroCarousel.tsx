@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const SLIDES = [
   {
@@ -45,13 +46,13 @@ export function HeroCarousel() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % SLIDES.length);
+      setCurrent((prev: number) => (prev + 1) % SLIDES.length);
     }, 6000);
     return () => clearInterval(timer);
   }, []);
 
-  const next = () => setCurrent((prev) => (prev + 1) % SLIDES.length);
-  const prev = () => setCurrent((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
+  const next = () => setCurrent((prev: number) => (prev + 1) % SLIDES.length);
+  const prev = () => setCurrent((prev: number) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-slate-900">
